@@ -1,3 +1,7 @@
+---
+import '../styles/global.css';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,26 +11,17 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
-    <header>
+	<body class="h-screen bg-inclusivePurple-100">
+	<header class="bg-inclusiveOrange-100">
         <h1><a href="/">Lightsey Bridge Website!</a></h1>
-        <a href="/">Home</a>
-        <a href="/needhelp">Need Help?</a>
-        <a href ="/bridgeresources">Bridge Resources</a>
-        <a href="/lightseyinfomap">Community Map & Information</a>
-        <a href="/moveinout">Move In/Out</a>
-        <a href="https://clemson.starrezhousing.com/StarRezPortalX/" target="_blank" rel="noopener noreferrer">Clemson Home Portal</a>
-        <a href="/aboutus">About Us</a>
+        <a href="/" class="bg-inclusiveRed-100">Home</a>
+        <a href="/needhelp" class="bg-inclusiveYellow-100">Need Help?</a>
+        <a href ="/bridgeresources" class="bg-inclusiveGreen-100">Bridge Resources</a>
+        <a href="/lightseyinfomap" class="bg-inclusiveBlue-100">Community Map & Information</a>
+        <a href="/moveinout" class="bg-inclusiveRed-100">Move In/Out</a>
+        <a href="https://clemson.starrezhousing.com/StarRezPortalX/" target="_blank" rel="noopener noreferrer" class="bg-inclusiveYellow-100">Clemson Home Portal</a>
+        <a href="/aboutus" class="bg-inclusiveGreen-100">About Us</a>
     </header>
-	<body>
-		<slot />
+		<slot/>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
