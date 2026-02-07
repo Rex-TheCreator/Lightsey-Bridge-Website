@@ -2,8 +2,8 @@
 import "../styles/global.css";
 ---
 
-<div class="bg-inclusiveOrange-300 p-4 my-2 mx-4">
-    <a href={Astro.props.href}  rel="noopener noreferrer" target={Astro.props.openOnNewTab? "_blank":"_self"}>
+<div class="bg-inclusiveOrange-300 px-4 py-2 my-2 mx-4 flex items-center">
+    <a href={Astro.props.href}  rel="noopener noreferrer" target={Astro.props.openOnNewTab? "_blank":"_self"} class="whitespace-nowrap">
         <slot/>
     </a>
 </div>
