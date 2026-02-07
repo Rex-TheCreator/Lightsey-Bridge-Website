@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Link from "../components/link.astro";
 ---
 
 <!doctype html>
@@ -12,15 +13,19 @@ import '../styles/global.css';
 		<title>{Astro.props.title}</title>
 	</head>
 	<body class="h-screen bg-inclusivePurple-100">
-	<header class="bg-inclusiveOrange-100">
-        <h1><a href="/">Lightsey Bridge Website!</a></h1>
-        <a href="/" class="bg-inclusiveRed-100">Home</a>
-        <a href="/needhelp" class="bg-inclusiveYellow-100">Need Help?</a>
-        <a href ="/bridgeresources" class="bg-inclusiveGreen-100">Bridge Resources</a>
-        <a href="/lightseyinfomap" class="bg-inclusiveBlue-100">Community Map & Information</a>
-        <a href="/moveinout" class="bg-inclusiveRed-100">Move In/Out</a>
-        <a href="https://clemson.starrezhousing.com/StarRezPortalX/" target="_blank" rel="noopener noreferrer" class="bg-inclusiveYellow-100">Clemson Home Portal</a>
-        <a href="/aboutus" class="bg-inclusiveGreen-100">About Us</a>
+	<header class="bg-inclusiveOrange-100 
+				     flex flex-row justify-center 
+					 p-4 mx-12 my-2">
+        <h1
+		class="flex items-center"
+			><a href="/">Lightsey Bridge Website!</a></h1>
+        <Link href="/">Home</Link>
+        <Link href="/needhelp">Need Help?</Link>
+        <Link href ="/bridgeresources">Bridge Resources</Link>
+        <Link href="/lightseyinfomap">Community Map & Information</Link>
+        <Link href="/moveinout">Move In/Out</Link>
+        <Link href="https://clemson.starrezhousing.com/StarRezPortalX/" openOnNewTab=true>Clemson Home Portal</Link>
+        <Link href="/aboutus">About Us</Link>
     </header>
 		<slot/>
 	</body>

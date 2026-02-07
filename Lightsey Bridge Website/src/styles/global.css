@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    --color-inclusiveOrange-100: #f56600;
-    --color-inclusiveRed-100: #b94700;
+    --color-inclusiveOrange-100: #f56600; /*use 40% opacity for third color*/
+    --color-inclusiveOrange-300: #b94700;
     --color-inclusiveYellow-100: #f1c400;
     --color-inclusiveGreen-100: #b7bf10;
     --color-inclusiveBlue-100: #005eb8;
