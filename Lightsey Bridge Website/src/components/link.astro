@@ -2,8 +2,21 @@
 import "../styles/global.css";
 ---
 
-<div class="bg-inclusiveOrange-300 px-4 py-2 my-2 mx-4 flex items-center">
-    <a href={Astro.props.href}  rel="noopener noreferrer" target={Astro.props.openOnNewTab? "_blank":"_self"} class="whitespace-nowrap">
+<div 
+    class="bg-inclusiveOrange-300 
+             px-2 py-3 ml-4 my-4
+             flex items-center justify-center flex-1 hover:flex-2
+             rounded-3xl
+             hover:bg-inclusiveOrange-100 duration-300
+             shadow-md hover:shadow-2xl">
+    
+    <a 
+        href={Astro.props.href}  
+        rel="noopener noreferrer" 
+        target={Astro.props.openOnNewTab? "_blank":"_self"} 
+        class="whitespace-nowrap
+               text-white">
+        
         <slot/>
     </a>
 </div>

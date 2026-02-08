@@ -13,15 +13,28 @@ import Link from "../components/link.astro";
 		<title>{Astro.props.title}</title>
 	</head>
 	<body class="h-screen bg-inclusivePurple-100">
-	<header class="flex flex-row justify-center">
-		<div class="bg-inclusiveOrange-100 
-				     flex flex-row justify-center items-center
+	<header 
+		class="flex flex-row justify-center">
+		
+		<div 
+			class="bg-linear-to-r from-inclusivePurple-100 to-inclusiveOrange-100 hover:to-inclusiveOrange-300 transition-colors duration-1000 
+				     flex flex-row justify-center items-center w-full
 					 p-4 mx-12 my-2
-					 w-full">
-			<div class="w-full">
-				<a href="/">Lightsey Bridge Website!</a>
+					 rounded-3xl
+					 shadow-2xl">
+			
+			 <div class="flex flex-row items-center pr-16">
+				<img 
+					src="/whitepaw.png" 
+					class="h-15 w-15 mr-4">
+				</img>
+				<a 
+					href="/"
+					class="text-2xl font-bold text-white whitespace-nowrap">
+					Lightsey Bridge Website!
+				</a>
 			</div>
-			<div class="flex flex-row justify-center items-center">
+			<div class="flex flex-row justify-between items-center w-full">
 				<Link href="/">Home</Link>
 				<Link href="/needhelp">Need Help?</Link>
 				<Link href ="/bridgeresources">Bridge Resources</Link>
@@ -32,6 +45,7 @@ import Link from "../components/link.astro";
 			</div>
 		</div>
     </header>
+	
 		<slot/>
 	</body>
 </html>
