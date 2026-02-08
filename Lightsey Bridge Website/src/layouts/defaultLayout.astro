@@ -45,7 +45,31 @@ import Link from "../components/link.astro";
 			</div>
 		</div>
     </header>
-	
+
+	<section 
+		class="flex-row justify-center text-center
+				py-4 my-4 mx-12 rounded-2xl
+				bg-red-800 text-white text-4xl font-bold
+				flex">  <!-- replace 'hidden' with 'flex' to show the alert and vice-versa to hide the alert. -->
+						<!-- DO NOT MODIFY ANYTHING ELSE: eg. 'flex-row' -->
+		<h1 
+			class="inline-block">
+			ALERT: BE AWARE, THERE IS A ROGUE RACCOON IN COMMUNITY. IT IS SPECULATED IT MAY HAVE RABIES. STAY ISIDE.
+		</h1>
+	</section>
+
+	<section 
+		class="flex-row justify-center text-center
+				py-4 my-4 mx-12 rounded-2xl
+				bg-inclusiveOrange-300 text-inclusiveGreen-100 text-4xl font-bold
+				flex">  <!-- replace 'hidden' with 'flex' to show the reminder and vice-versa to hide the reminder. -->
+						<!-- DO NOT MODIFY ANYTHING ELSE: eg. 'flex-row' -->
+		<h1 
+			class="inline-block">
+			Friendly reminder to talk to your RCMs this week! :)
+		</h1>
+	</section>
+
 		<slot/>
 	</body>
 </html>
