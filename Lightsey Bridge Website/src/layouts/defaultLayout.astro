@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import Link from "../components/link.astro";
+import Alert from "../components/alert.astro";
+import Reminder from '../components/reminder.astro';
 ---
 
 <!doctype html>
@@ -17,24 +19,25 @@ import Link from "../components/link.astro";
 		class="flex flex-row justify-center">
 		
 		<div 
-			class="bg-linear-to-r from-inclusivePurple-100 to-inclusiveOrange-100 hover:to-inclusiveOrange-300 transition-colors duration-1000 
-				     flex flex-row justify-center items-center w-full
+			class="bg-linear-to-l from-inclusivePurple-100 to-inclusiveOrange-100 hover:to-inclusiveOrange-300 transition-colors duration-1000 
+				     flex flex-row justify-center items-center w-full gap-x-16
 					 p-4 mx-12 my-2
 					 rounded-3xl
 					 shadow-2xl">
 			
-			 <div class="flex flex-row items-center pr-16">
+			 <div class="flex flex-none items-center">
 				<img 
 					src="/whitepaw.png" 
-					class="h-15 w-15 mr-4">
+					class="h-16 w-16 mr-4"
+					alt="Logo">
 				</img>
 				<a 
 					href="/"
 					class="text-2xl font-bold text-white whitespace-nowrap">
-					Lightsey Bridge Website!
+					Lightsey Bridge Website
 				</a>
 			</div>
-			<div class="flex flex-row justify-between items-center w-full">
+			<div class="flex flex-row justify-between items-center w-full gap-x-4">
 				<Link href="/">Home</Link>
 				<Link href="/needhelp">Need Help?</Link>
 				<Link href ="/bridgeresources">Bridge Resources</Link>
@@ -46,29 +49,13 @@ import Link from "../components/link.astro";
 		</div>
     </header>
 
-	<section 
-		class="flex-row justify-center text-center
-				py-4 my-4 mx-12 rounded-2xl
-				bg-red-800 text-white text-4xl font-bold
-				flex">  <!-- replace 'hidden' with 'flex' to show the alert and vice-versa to hide the alert. -->
-						<!-- DO NOT MODIFY ANYTHING ELSE: eg. 'flex-row' -->
-		<h1 
-			class="inline-block">
-			ALERT: BE AWARE, THERE IS A ROGUE RACCOON IN COMMUNITY. IT IS SPECULATED IT MAY HAVE RABIES. STAY ISIDE.
-		</h1>
-	</section>
+	<Alert show={false}> <!-- Change to "true" to show. Change to "false" to hide -->
+		ALERT: BE AWARE, THERE IS A ROGUE RACCOON IN COMMUNITY. IT IS SPECULATED IT MAY HAVE RABIES. STAY INSIDE.
+	</Alert>
 
-	<section 
-		class="flex-row justify-center text-center
-				py-4 my-4 mx-12 rounded-2xl
-				bg-inclusiveOrange-300 text-inclusiveGreen-100 text-4xl font-bold
-				flex">  <!-- replace 'hidden' with 'flex' to show the reminder and vice-versa to hide the reminder. -->
-						<!-- DO NOT MODIFY ANYTHING ELSE: eg. 'flex-row' -->
-		<h1 
-			class="inline-block">
-			Friendly reminder to talk to your RCMs this week! :)
-		</h1>
-	</section>
+	<Reminder show={false}> <!-- Change to "true" to show. Change to "false" to hide -->
+		Friendly reminder to talk to your RCMs this week! :)
+	</Reminder>
 
 		<slot/>
 	</body>
