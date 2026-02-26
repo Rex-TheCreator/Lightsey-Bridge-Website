@@ -14,7 +14,7 @@ import Reminder from '../components/reminder.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
-	<body class="min-h-screen bg-inclusivePurple-100 flex flex-col">
+	<body class="bg-linear-to-b from-inclusivePurple-100 from-75% to-inclusiveOrange-300 bg-fixed flex flex-col">
 	<header 
 		class="flex flex-row flex-none justify-center">
 		
@@ -49,11 +49,11 @@ import Reminder from '../components/reminder.astro';
 		</div>
     </header>
 
-	<Alert show={true}> <!-- Change to "true" to show. Change to "false" to hide -->
+	<Alert show={false}> <!-- Change to "true" to show. Change to "false" to hide -->
 		ALERT: BE AWARE, THERE IS A ROGUE RACCOON IN COMMUNITY. IT IS SPECULATED IT MAY HAVE RABIES. STAY INSIDE.
 	</Alert>
 
-	<Reminder show={true}> <!-- Change to "true" to show. Change to "false" to hide -->
+	<Reminder show={false}> <!-- Change to "true" to show. Change to "false" to hide -->
 		Friendly reminder to talk to your RCMs this week! :)
 	</Reminder>
 	
@@ -63,7 +63,7 @@ import Reminder from '../components/reminder.astro';
 	
 	<footer 
 		class="flex items-center flex-none
-				bg-linear-to-r from-inclusiveOrange-300 to-inclusiveOrange-300 hover:to-inclusiveOrange-100 transition-colors duration-1000
+				bg-linear-to-r from-transparent to-transparent hover:to-inclusiveOrange-300 transition-colors duration-1000
 			   px-4 py-2 mt-auto">
 		<div class="flex flex-none items-center opacity-80 hover:opacity-100 transition-opacity duration-1000">
 			<img 
@@ -78,10 +78,16 @@ import Reminder from '../components/reminder.astro';
 				Lightsey Bridge
 			</a>
 		</div>
-		<div class="flex-2 text-right text-sm lg:text-lg">
+		<div class="flex-2 text-right text-sm lg:text-lg text-white/80">
 			<div>The Lightsey Bridge Community</div>
-			<div>Clemson University 2026</div>
-			<div>210 Theta Kappa Street</div>
+			<a 
+				href="https://www.clemson.edu/" target="_blank"
+				class="block">
+				Clemson University 2026</a>
+			<a 
+				href="https://www.google.com/maps/place/210+Theta+Kappa+Street,+Clemson,+SC+29634" target="_blank"
+				class="block">
+				210 Theta Kappa Street</a>
 		</div>
 	</footer>
 	</body>
