@@ -1,7 +1,41 @@
 ---
+import "../styles/global.css"
 import Layout from "../layouts/defaultLayout.astro";
+import Alert from "../components/alert.astro";
+import Divider from "../components/divider.astro";
+import Helpcard from "../components/helpcard.astro";
 ---
 
 <Layout title="Help Page">
-    <h1>Help Section</h1>
+    <div>
+        <Divider/>
+        <Alert show={true}>IF YOU ARE EXPERIENCING AN EMERGENCY CALL 911. IF YOU HAVE TO ASK, CALL 911.</Alert>
+        <div class="flex flex-wrap gap-8 m-4 lg:mx-12">
+            <Helpcard
+                headercolor="inclusiveOrange-100"
+                header="Locked Out?"
+            >
+                Go to the Mauldin Area Desk! If you can't make the trip, call 864-656-2311
+            </Helpcard>
+            <Helpcard
+                headercolor="inclusiveBlue-100"
+                header="Something Broken Or Not Working?"
+            >
+                Call maintenance, 864-656-5450!
+            </Helpcard>
+            <Helpcard
+                headercolor="inclusiveGreen-100"
+                textcolor="black"
+                header="Contact Police For Non-Emergency?"
+            >
+                Call the non-emergency line, 864-656-2222!
+            </Helpcard>
+            <Helpcard
+                headercolor="inclusivePurple-100"
+                header="Need Help From An RCM?"
+            >
+                Call the On-Call phone, 864-986-1115!
+            </Helpcard>
+        </div>
+    </div>
 </Layout>

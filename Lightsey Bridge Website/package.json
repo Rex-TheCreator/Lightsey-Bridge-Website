@@ -1,7 +1,11 @@
 {
   "name": "lightsey-bridge-website",
-  "type": "module",
   "version": "0.0.1",
+  "description": "```sh\r npm create astro@latest -- --template basics\r ```",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

@@ -6,7 +6,7 @@ import Reminder from '../components/reminder.astro';
 ---
 
 <!doctype html>
-<html lang="en" class="h-screen">
+<html lang="en" class="h-screen overflow-y-auto">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,7 +14,8 @@ import Reminder from '../components/reminder.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
-	<body class="bg-linear-to-b from-inclusivePurple-100 from-75% to-inclusiveOrange-300 bg-fixed flex flex-col">
+	<body class="bg-linear-to-b from-inclusivePurple-100 from-75% to-inclusiveOrange-300 
+				 bg-fixed flex flex-col min-h-screen">
 	<header 
 		class="flex flex-row flex-none justify-center">
 		
