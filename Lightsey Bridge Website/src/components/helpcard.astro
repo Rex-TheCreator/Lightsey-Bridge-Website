@@ -7,13 +7,13 @@ import "../styles/global.css";
          text-white bg-inclusiveOrange-300"
 >
     <div class="text-3xl flex justify-center">
-        <div class={`bg-${Astro.props.headercolor} text-${Astro.props.textcolor} text-3xl text-center px-4 py-2 rounded-2xl`}>
+        <div
+            class=`bg-inclusivePurple-100 text-3xl text-center px-4 py-2 rounded-2xl`
+        >
             {Astro.props.header}
         </div>
     </div>
-    <div class="flex justify-center">
-        <div class="text-xl text-center">
-            <slot/>
-        </div>
+    <div class="text-xl text-center mt-auto">
+        <slot />
     </div>
 </div>
