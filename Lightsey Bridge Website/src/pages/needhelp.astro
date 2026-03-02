@@ -1,41 +1,54 @@
 ---
-import "../styles/global.css"
+import "../styles/global.css";
 import Layout from "../layouts/defaultLayout.astro";
 import Alert from "../components/alert.astro";
 import Divider from "../components/divider.astro";
 import Helpcard from "../components/helpcard.astro";
+import SimpleLink from "../components/simplelink.astro";
 ---
 
 <Layout title="Help Page">
     <div>
-        <Divider/>
-        <Alert show={true}>IF YOU ARE EXPERIENCING AN EMERGENCY CALL 911. IF YOU HAVE TO ASK, CALL 911.</Alert>
-        <div class="flex flex-wrap gap-8 m-4 lg:mx-12">
-            <Helpcard
-                headercolor="inclusiveOrange-100"
-                header="Locked Out?"
-            >
-                Go to the Mauldin Area Desk! If you can't make the trip, call 864-656-2311
+        <Divider />
+        <Alert show={true}
+            >IF YOU ARE EXPERIENCING AN EMERGENCY CALL <a href="tel:911" class="underline underline-offset-3">911</a>. IF YOU HAVE TO ASK, CALL <SimpleLink href="tel:911">911</SimpleLink>
+        </Alert>
+        <div class="flex flex-wrap gap-8 m-8 lg:mx-12">
+            <Helpcard header="Flooding or other Maintenance Emergency?">
+                Call the emergency maintenance line, <SimpleLink href="tel:864-656-5450">864-656-5450!</SimpleLink>
             </Helpcard>
-            <Helpcard
-                headercolor="inclusiveBlue-100"
-                header="Something Broken Or Not Working?"
-            >
-                Call maintenance, 864-656-5450!
+        </div>
+        <div class="flex flex-wrap gap-8 m-8 lg:mx-12">
+            <Helpcard header="Something Broken Or Not Working?">
+                Submit a maintenance work order
+                <SimpleLink href="https://housing.clemson.edu/housing/resources/maintenance-requests/">
+                    here!
+                </SimpleLink>
             </Helpcard>
-            <Helpcard
-                headercolor="inclusiveGreen-100"
-                textcolor="black"
-                header="Contact Police For Non-Emergency?"
-            >
-                Call the non-emergency line, 864-656-2222!
+            <Helpcard header="Police Non-Emergency?">
+                Call the non-emergency line, <SimpleLink href="tel:864-656-2222">864-656-2222!</SimpleLink>
             </Helpcard>
-            <Helpcard
-                headercolor="inclusiveYellow-100"
-                textcolor="black"
-                header="Need Help From An RCM?"
-            >
-                Call the On-Call phone, 864-986-1115!
+            <Helpcard header="Towed or Question About Parking?">
+                Go to the  
+                <SimpleLink href="https://www.clemson.edu/campus-life/parking/">
+                    parking and transportation services website
+                </SimpleLink>
+                or call
+                <SimpleLink href="tel:864-656-2270">
+                    864-656-2270!
+                </SimpleLink>
+            </Helpcard>
+        </div>
+        <div class="flex flex-wrap gap-8 m-8 lg:mx-12">
+            <Helpcard header="Locked Out?">
+                Go to the
+                <SimpleLink href="https://maps.app.goo.gl/8AFY7iUgHXoXXauP9">
+                    Mauldin Area Desk!
+                </SimpleLink>
+                <div>If you can't make the trip, call <SimpleLink href="tel:864-656-2311">864-656-2311!</SimpleLink></div>
+            </Helpcard>
+            <Helpcard header="Need Help From An RCM?">
+                Call the On-Call RCM phone, <SimpleLink href="tel:864-986-1115">864-986-1115!</SimpleLink>
             </Helpcard>
         </div>
     </div>
