@@ -2,9 +2,57 @@
 import Layout from "../layouts/defaultLayout.astro";
 ---
 <Layout title="Bridge Resources">
-    <h1>Bridge Resources Section</h1>
-    <h2><a href="https://www.tctc.edu/" target="_blank" rel="noopener noreferrer">TCTC Website</a></h3>
-    <h3><a href="https://www.tctc.edu/about-us/convenient-locations/pendleton-campus/" target="_blank" rel="noopener noreferrer">TCTC Map</a></h4>
+    <div class="grid grid-cols-12 grid-rows-[repeat(3,200px)] mt-4">
+        <div class="row-[1/2] col-[2/9] xl:col-[2/6] grid place-items-center justify-items-start text-center z-1">
+            <div
+                class="text-white text-3xl lg:text-5xl font-extrabold leading-[1.2]
+                    bg-inclusiveOrange-100
+                    rounded-2xl p-4"
+            >
+                Bridge Resources
+            </div>
+        </div>
+        <div class="row-[1/4] col-[2/12] grid place-items-center">
+            <div
+                class="h-3/4 w-34/35 rounded-2xl
+                       bg-[url('CATBus.jpg')]
+                       bg-cover bg-center"
+            >
+            </div>
+        </div>
+        <div
+            class="row-[3/4] col-[4/12] lg:col-[8/12]
+                   grid place-items-center text-center"
+        >
+            <div
+                class="text-white font-bold
+                    bg-inclusiveOrange-300
+                    rounded-2xl p-4 text-sm md:text-xl"
+            >
+                If you need more help, check-in with your RCM or check out the "Need Help?" page!
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap gap-4 p-2 mx-4 my-2 lg:p-4 lg:mx-12">
+        <div
+            class="flex-1 text-center text-5xl text-white bg-inclusiveOrange-100 rounded-2xl text-nowrap
+                   lg:hover:flex-2 hover:bg-inclusiveOrange-300 hover:shadow-2xl duration-300">
+            <a 
+                href="https://www.tctc.edu/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex justify-center p-4 hover:font-bold duration-100">TCTC Website</a>
+        </div>
+        <div
+            class="flex-1 text-center text-5xl text-white bg-inclusiveOrange-100 rounded-2xl text-nowrap
+                   lg:hover:flex-2 hover:bg-inclusiveOrange-300 hover:shadow-2xl duration-300">
+            <a 
+                href="https://www.tctc.edu/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex justify-center p-4 hover:font-bold duration-100">TCTC Map</a>
+        </div>
+    </div>
     <h4>Parking and Tranportation</h6>
     <h4>Bus Routes and Times</h6>
 </Layout>
