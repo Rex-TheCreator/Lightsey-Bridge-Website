@@ -1,6 +1,38 @@
 ---
 import Layout from "../layouts/defaultLayout.astro";
+import Instructioncontainer from "../components/instructioncontainer.astro";
+import Simplelink from "../components/simplelink.astro";
+import Reminder from "../components/reminder.astro";
 ---
 <Layout title="Move-In/Move-Out">
-    <h1>Move-In/Move-Out section</h1>
+    <Reminder show="True">If you need help at any point, contact your RCM or call the <Simplelink href="tel:864-986-1115">On-Call Phone!</Simplelink></Reminder>
+    <Instructioncontainer title="Beginning of the Year Move-In">
+        <ol class="list-decimal ml-8 space-y-8">
+            <li>Make sure you retrieve your key from the P-8 Lot. <Simplelink href="https://maps.app.goo.gl/uHhmKSzDqpNvgwju8">Click here for directions.</Simplelink></li>
+            <li>Once you have your key, make your way to the Lightsey Bridge Community. <Simplelink href="https://www.google.com/maps/place/210+Theta+Kappa+Street,+Clemson,+SC+29634/">Click here for directions.</Simplelink></li>
+            <li>If you're moving between 10am-5pm, RCMs should be posted around community to help you find your exact building. You can also check out <Simplelink href="lightseyinfo">Lightsey Info</Simplelink> for help.</li>
+            <li>Once you have found your apartment, hold your phone to the door's black box to scan in. It may take up to 10 minutes from the first scan attempt to be able to scan in!</li>
+            <li>Find your room and move-in!</li>
+        </ol>
+    </Instructioncontainer>
+    <Instructioncontainer title="Winter Break">
+        <ol class="list-decimal ml-8 space-y-8">
+            <li>If you are not returning for the spring semester, follow the instructions for "Move-Out."</li>
+            <li>Make sure you coordinate with your RCM before leaving for Winter Break.</li>
+            <li>The last resident to leave has to do a walkthrough with an RCM prior to leaving.</li>
+            <li>Your space must be ready for your absence during spring break</li>
+            <li>You must be ready to leave immediately after your walkthrough with an RCM.</li>
+            <li>Any and all housing violations will be reported if found during this walkthrough.</li>
+        </ol>
+    </Instructioncontainer>
+    <Instructioncontainer title="Move-Out">
+        <ol class="list-decimal ml-8 space-y-8">
+            <li>Make sure you coordinate with your RCM about moving out.</li>
+            <li>Every resident has to do a walkthrough with an RCM prior to leaving.</li>
+            <li>Your space must be cleaned out and you must be ready to leave immediately after your walkthrough with an RCM.</li>
+            <li>Any and all housing violations will be reported if found during this walkthrough.</li>
+            <li>You'll need to leave your room key with your RCM. Failure to return your room key will be cause for a fine of up to $150.</li>
+        </ol>
+    </Instructioncontainer>
+    </div>
 </Layout>
