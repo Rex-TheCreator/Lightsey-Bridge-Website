@@ -1,8 +1,37 @@
 ---
 import Layout from '../layouts/defaultLayout.astro';
+import Ltcard from '../components/ltcard.astro';
 ---
 
 <Layout title="About Us">
-    <h1>Lightsey Staff Section!</h1>
-    <h2>Go Tigers!</h2>
+     <div class="flex flex-wrap gap-4 p-2 mx-8 lg:p-4 lg:mx-12">
+        <Ltcard
+            name="William Strafford"
+            position="Assitant Director in Residence"
+            imageSrc="staffpictures/Will.png"
+        />
+        <Ltcard
+            name="Chrsitine Charette"
+            position="Community Director of Lightsey"
+            imageSrc="staffpictures/Christine.png"
+        />
+     </div>
+     <div class="flex flex-wrap gap-4 p-2 mx-8 lg:p-4 lg:mx-12">
+        <Ltcard
+            name="Skylar Walder"
+            position="Graduate Community Director"
+            imageSrc="staffpictures/Skylar.png"
+        />
+        <Ltcard
+            name="Emily Fisher"
+            position="Graduate Community Director"
+            imageSrc="staffpictures/Emily.png"
+        />
+     </div>
+     <div class="flex p-2 mx-8 lg:p-4 lg:mx-12">
+        <div class="flex-1 text-2xl sm:text-3xl text-white p-4 bg-inclusiveOrange-300">RCMs of Lightsey Bridge:</div>
+        <div class="grid">
+
+        </div>
+     </div>
 </Layout>

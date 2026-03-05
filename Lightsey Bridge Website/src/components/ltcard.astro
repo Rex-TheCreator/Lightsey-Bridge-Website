@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+---
+
+<div class="flex flex-1 gap-4">
+    <div
+        class="flex flex-col flex-1 text-white justify-center text-center items-center"
+    >
+        <div class="text-xl sm:text-3xl">{Astro.props.name}</div>
+        <div class="text-sm sm:text-base">{Astro.props.position}</div>
+        <div class="text-sm sm:text-base">{Astro.props.contacts}</div>
+    </div>
+    <div class="flex-2 flex justify-center items-center">
+        <img
+            class="max-h-100 min-w-40 aspect-16/10 object-contain"
+            src={Astro.props.imageSrc}
+        />
+    </div>
+</div>
