@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+---
+
+    <div class="lg:p-4 lg:mx-12
+                flex gap-8 p-2 mx-4">
+        <div
+            class={" lg:grid-cols-3 lg:grid-rows-[500px] grid grid-rows-[250px_300px] w-full items-center justify-items-start"}
+        >
+            <div class="lg:col-[1/2]
+                        row-[1/2] p-4">
+                <h1 class="text-4xl text-white text-center mb-4">
+                    {Astro.props.title}
+                </h1>
+                <slot/>
+            </div>
+            <a
+                class=" xl:col-[2/3]
+                        lg:col-[2/4] lg:row-[1/2] lg:h-auto lg:overflow-visible
+                        grid justify-items-start col-[1/2] row-[2/3] z-1 h-75 overflow-clip"
+                href={Astro.props.imageLink}
+                target="_blank"
+            >
+                <img
+                    class=" lg:shadow-[5px_20px_10px_rgba(0,0,0,0.5)]
+                            lg:hover:translate-x-6 lg:hover:translate-y-4 lg:hover:shadow-none
+                            h-auto w-11/12 aspect-16/10
+                            duration-300 ease-in-out"
+                    src={Astro.props.image}
+                />
+            </a>
+            <div
+                class=" xl:col-[2/3]
+                        lg:block lg:col-[2/4] lg:row-[1/2]
+                        hidden col-[1/2] row-[2/3] aspect-16/10 h-auto w-11/12 bg-inclusiveOrange-100 translate-x-6 translate-y-4"
+            >
+            </div>
+        </div>
+    </div>

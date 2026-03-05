@@ -2,14 +2,13 @@
 import "../styles/global.css";
 ---
 
-            <a 
-                href={Astro.props.href} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="flex flex-1 text-4xl text-white bg-inclusiveOrange-300 rounded-2xl h-max
-                        justify-center items-center text-center p-8 
-                        hover:bg-inclusiveOrange-100 hover:shadow-2xl duration-500">
-                            
-                            <slot/>
-                       
-            </a>
+<a
+    href={Astro.props.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="flex flex-1 text-2xl md:text-4xl text-white bg-inclusiveOrange-300 rounded-2xl h-max
+                        justify-center items-center text-center p-8
+                        hover:bg-inclusiveOrange-100 hover:shadow-[5px_20px_10px_rgba(0,0,0,0.5)] duration-500"
+>
+    <slot />
+</a>
