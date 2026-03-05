@@ -1,0 +1,18 @@
+---
+import "../styles/global.css";
+import Simplelink from "./simplelink.astro";
+---
+
+<div class="flex bg-inclusiveOrange-300">
+    <div class="flex flex-col flex-1 justify-center p-4 items-center">
+        <div class="text-xl text-white">{Astro.props.RCMName}</div>
+        <div class="text-xl text-white">Building {Astro.props.RCMBuildingNumber} RCM</div>
+        <div class={Astro.props.visibleApartments? "text-sm text-white" : "hidden"}>{Astro.props.apartments}</div>
+        <div class={Astro.props.visibleBandLink? "text-sm text-white" : "hidden"}>
+            <Simplelink href={Astro.props.bandLink}>Band Link</Simplelink>
+        </div>
+    </div>
+    <div class="h-62.5 w-37.5 overflow-clip justify-end">
+        <img class="h-full w-full object-cover" src={Astro.props.imageSrc? Astro.props.imageSrc : "whitepaw.png"}/>
+    </div>
+</div>
