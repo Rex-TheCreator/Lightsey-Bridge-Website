@@ -5,8 +5,8 @@ import Simplelink from "./simplelink.astro";
 
 <div class="flex bg-inclusiveOrange-300">
     <div class="flex flex-col flex-1 justify-center p-4 items-center">
-        <div class="text-xl text-white">{Astro.props.RCMName}</div>
-        <div class="text-xl text-white">Building {Astro.props.RCMBuildingNumber} RCM</div>
+        <div class="text-xl text-white">{Astro.props.RCLName}</div>
+        <div class="text-xl text-white">Building {Astro.props.RCLBuildingNumber} RCL</div>
         <div class={Astro.props.visibleApartments? "text-sm text-white" : "hidden"}>{Astro.props.apartments}</div>
         <div class={Astro.props.visibleBandLink? "text-sm text-white" : "hidden"}>
             <Simplelink href={Astro.props.bandLink}>Groupchat Link</Simplelink>
