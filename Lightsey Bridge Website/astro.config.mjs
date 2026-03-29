@@ -10,6 +10,6 @@ export default defineConfig({
   devToolbar: {
     enabled: false
   },
-  site: 'https://Rex-TheCreator.github.io',
-  base: '/Lightsey-Bridge-Website',
+  site: 'https://rex-thecreator.github.io',
+  base: '/Lightsey-Bridge-Website'
 });
