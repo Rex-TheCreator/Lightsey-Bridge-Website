@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+
+const BASE = import.meta.env.PUBLIC_BASE;
 ---
 
     <div class="lg:p-4 lg:mx-12
@@ -18,7 +20,7 @@ import "../styles/global.css";
                 class=" xl:col-[2/3]
                         lg:col-[2/4] lg:row-[1/2] lg:h-auto lg:overflow-visible
                         grid justify-items-start col-[1/2] row-[2/3] z-1 h-75 overflow-clip"
-                href={"/Lightsey-Bridge-Website/" + Astro.props.imageLink}
+                href={BASE + Astro.props.imageLink}
                 target="_blank"
             >
                 <img
@@ -26,7 +28,7 @@ import "../styles/global.css";
                             lg:hover:translate-x-6 lg:hover:translate-y-4 lg:hover:shadow-none
                             max-h-125 h-auto w-11/12 aspect-16/10
                             duration-300 ease-in-out"
-                    src={"/Lightsey-Bridge-Website/" + Astro.props.image}
+                    src={BASE + Astro.props.image}
                 />
             </a>
             <div

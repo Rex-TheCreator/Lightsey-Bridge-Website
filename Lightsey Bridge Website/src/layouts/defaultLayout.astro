@@ -3,6 +3,8 @@ import '../styles/global.css';
 import Link from "../components/link.astro";
 import Alert from "../components/alert.astro";
 import Reminder from '../components/reminder.astro';
+
+const BASE = import.meta.env.PUBLIC_BASE;
 ---
 
 <!doctype html>
@@ -10,7 +12,7 @@ import Reminder from '../components/reminder.astro';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/Lightsey-Bridge-Website/whitepaw.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href={BASE + "whitepaw.png"} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
@@ -28,7 +30,7 @@ import Reminder from '../components/reminder.astro';
 			
 			 <div class="flex flex-none items-center">
 				<img 
-					src="/Lightsey-Bridge-Website/whitepaw.png" 
+					src={BASE +"whitepaw.png"}
 					class="h-8 w-8 lg:h-16 lg:w-16 mr-4"
 					alt="Logo">
 				</img>
@@ -68,7 +70,7 @@ import Reminder from '../components/reminder.astro';
 			   px-4 py-2 mt-auto">
 		<div class="flex flex-none items-center opacity-80 hover:opacity-100 transition-opacity duration-1000">
 			<img 
-				src="/Lightsey-Bridge-Website/whitepaw.png" 
+				src={BASE + "whitepaw.png"}
 				class="h-10 w-10 mr-4
 					   sm:h-14 sm:w-14"
 				alt="Logo">

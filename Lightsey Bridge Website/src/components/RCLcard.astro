@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import Simplelink from "./simplelink.astro";
+
+const BASE = import.meta.env.PUBLIC_BASE;
 ---
 
 <div class="flex bg-inclusiveOrange-300">
@@ -13,6 +15,6 @@ import Simplelink from "./simplelink.astro";
         </div>
     </div>
     <div class="h-62.5 w-37.5 overflow-clip justify-end">
-        <img class="h-full w-full object-cover" src={"/Lightsey-Bridge-Website/" + (Astro.props.imageSrc? Astro.props.imageSrc : "whitepaw.png")}/>
+        <img class="h-full w-full object-cover" src={BASE + (Astro.props.imageSrc? Astro.props.imageSrc : "whitepaw.png")}/>
     </div>
 </div>
