@@ -3,12 +3,21 @@ import Layout from "../layouts/defaultLayout.astro";
 import Instructioncontainer from "../components/instructioncontainer.astro";
 import Simplelink from "../components/simplelink.astro";
 import Reminder from "../components/reminder.astro";
+
+const BASE = import.meta.env.PUBLIC_BASE;
 ---
 <Layout title="Move-In/Move-Out">
-    <Reminder show="True">If you need help at any point, contact your RCM or call the <Simplelink href="tel:864-986-1115">On-Call Phone!</Simplelink></Reminder>
+    <Reminder show={true}>
+        If you need help at any point, contact your RCM or call the <Simplelink href="tel:864-986-1115">On-Call Phone!</Simplelink>
+    </Reminder>
     <Instructioncontainer title="Move-Out">
         <ol class="list-decimal ml-8 space-y-8">
-            <li>Insert Instructions</li>
+            <li>Late requests open April 1st and close April 24th. If you are staying late, make sure to submit one on the <Simplelink href="https://clemson.starrezhousing.com/StarRezPortalX/">home portal</Simplelink></li>
+            <li>Clothing, Furniture, and aprtment item donations are happening April 20th - May 2nd (Location TBD, 8am-5pm) and May 3rd - May 8th (Douthit West, 8am-3:30pm)</li>
+            <li>You will be notified on April 10th about closing meetings. It is important that you choose a meeting time with your RCM between April 11th - April 17th.</li>
+            <li>During this closing meeting, every resident must schedule a time to move out with their RCM. Failure to do this may result in delays and/or fines.</li>
+            <li>When scheduling your move-out time, remember that you must be ready to immediately leave after your RCM checks your space. If you are not ready to leave, your RCM will decline until you are.</li>
+            <li>Any and all housing violations discovered during the walk-through will be reported. All housing rules and regulations can be found on the Lightsey Info page</li>
         </ol>
     </Instructioncontainer>
     <Instructioncontainer title="Beginning of the Year Move-In">
