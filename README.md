@@ -6,8 +6,8 @@ This project addresses the lack of a centralized, easily accessible platform for
 Live site: https://rex-thecreator.github.io/Lightsey-Bridge-Website/
 
 ## Preview
-![Desktop](./public/Desktop.png)
-![Mobile](./public/Mobile.jpg)
+![Desktop](./Lightsey%20Bridge%20Website/public/Desktop.png)
+![Mobile](./Lightsey%20Bridge%20Website/public/Mobile.jpg)
 
 ## Tech Stack
 - Astro (Site structure)
