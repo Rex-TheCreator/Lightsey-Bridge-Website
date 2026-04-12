@@ -1,46 +1,36 @@
-# Astro Starter Kit: Basics
+# Lightsey Bridge Community Website
+A student-facing website that connects Clemson Home staff and the ~800 residents of Lightsey Bridge by providing a single, easily accessible platform for important information such as upcoming events, quick FAQ help, student program information, community resources, move-in/out instructions, and support contacts.
 
-```sh
-npm create astro@latest -- --template basics
-```
+This project addresses the lack of a centralized, easily accessible platform for bridge students' housing and program information, improving communication between staff and residents.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Live site: https://rex-thecreator.github.io/Lightsey-Bridge-Website/
 
-## 🚀 Project Structure
+## Preview
+![Desktop](./public/Desktop.png)
+![Mobile](./public/Mobile.jpg)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tech Stack
+- Astro (Site structure)
+- Tailwind CSS (Site Styling)
+- JavaScript (Programming Language)
+- GitHub Pages (Deployment)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Key Features
+- Centralized housing and community information for ~800 residents
+- Staff directory with structured, reusable UI components
+- Dynamic alert and reminder banners for time-sensitive updates
+- Multi-page responsive design optimized for accessibility and usability
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## My Role
+- Designed and developed the website end-to-end
+- Built reusable UI components using Astro
+- Structured site for maintainability and scalability
+- Deployed, updated, and maintained the site using GitHub Pages
 
-## 🧞 Commands
+Looking to modify the website? Check out "DOCS.md"
 
-All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+This site was created by Jim Daou(https://github.com/Rex-TheCreator) and was inspired by the Lightsey Bridge Staff of 2025-2026
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Contributors since:
+- 

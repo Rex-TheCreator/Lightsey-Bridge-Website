@@ -20,7 +20,7 @@ const BASE = import.meta.env.PUBLIC_BASE;
                 class=" xl:col-[2/3]
                         lg:col-[2/4] lg:row-[1/2] lg:h-auto lg:overflow-visible
                         grid justify-items-start col-[1/2] row-[2/3] z-1 h-75 overflow-clip"
-                href={BASE + Astro.props.imageLink}
+                href={Astro.props.imageLink}
                 target="_blank"
             >
                 <img
@@ -28,7 +28,7 @@ const BASE = import.meta.env.PUBLIC_BASE;
                             lg:hover:translate-x-6 lg:hover:translate-y-4 lg:hover:shadow-none
                             max-h-125 h-auto w-11/12 aspect-16/10
                             duration-300 ease-in-out"
-                    src={BASE + Astro.props.image}
+                    src={Astro.props.image}
                 />
             </a>
             <div

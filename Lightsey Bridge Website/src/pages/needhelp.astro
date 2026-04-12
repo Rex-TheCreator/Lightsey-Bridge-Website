@@ -2,14 +2,12 @@
 import "../styles/global.css";
 import Layout from "../layouts/defaultLayout.astro";
 import Alert from "../components/alert.astro";
-import Divider from "../components/divider.astro";
 import Helpcard from "../components/helpcard.astro";
 import SimpleLink from "../components/simplelink.astro";
 ---
 
 <Layout title="Help Page">
     <div>
-        <Divider />
         <Alert show={true}
             >IF YOU ARE EXPERIENCING AN EMERGENCY CALL <a href="tel:911" class="underline underline-offset-3">911</a>. IF YOU HAVE TO ASK, CALL <SimpleLink href="tel:911">911</SimpleLink>
         </Alert>

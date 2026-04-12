@@ -3,13 +3,15 @@ import Layout from "../layouts/defaultLayout.astro";
 import Leftinfocard from "../components/leftinfocard.astro";
 import Rightinfocard from "../components/rightinfocard.astro";
 import Hoverelement from "../components/hoverelement.astro";
+
+const BASE = import.meta.env.PUBLIC_BASE;
 ---
 
 <Layout title="Lightsey Info">
     <Leftinfocard
         title="General Lightsey Bridge Location"
-        imageLink="https://www.google.com/maps/place/210+Theta+Kappa+Street,+Clemson,+SC+29634/"
-        image="Lightsey_Location.jpg"
+        imageLink= "https://www.google.com/maps/place/210+Theta+Kappa+Street,+Clemson,+SC+29634/"
+        image={BASE + "Lightsey_Location.jpg"}
     >
         <div class="text-white text-center">
             Click on the image to get directions.
@@ -18,8 +20,8 @@ import Hoverelement from "../components/hoverelement.astro";
 
     <Rightinfocard
         title="Lightsey Bridge Buildings"
-        imageLink="Lightsey_Structure.png"
-        image="Lightsey_Structure(cropped).jpg"
+        imageLink={BASE + "Lightsey_Structure.png"}
+        image={BASE + "Lightsey_Structure(cropped).jpg"}
     >
         <div class="text-white text-center">
             Entering community, the top of the image correlates to the right direction and the
@@ -32,8 +34,8 @@ import Hoverelement from "../components/hoverelement.astro";
 
     <Leftinfocard
         title="Lightsey Parking Areas"
-        imageLink="Lightsey_Parking.png"
-        image="Lightsey_Parking.jpg"
+        imageLink={BASE + "Lightsey_Parking.png"}
+        image={BASE + "Lightsey_Parking.jpg"}
     >
         <div class="text-white text-center">
             You can park in any of the purple areas as long as you have already

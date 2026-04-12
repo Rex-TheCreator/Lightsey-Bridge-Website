@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Link from "../components/link.astro";
 import Alert from "../components/alert.astro";
 import Reminder from '../components/reminder.astro';
+import Divider from "../components/divider.astro";
 
 const BASE = import.meta.env.PUBLIC_BASE;
 ---
@@ -57,8 +58,10 @@ const BASE = import.meta.env.PUBLIC_BASE;
 	</Alert>
 
 	<Reminder show={true}> <!-- Change to "true" to show. Change to "false" to hide -->
-		Friendly reminder to talk to your RCMs this week :)
+		Sign up for a move out time with your RCM!
 	</Reminder>
+
+	<Divider/>
 	
 	<main class="flex-1">
 		<slot/>
