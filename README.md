@@ -27,7 +27,7 @@ Live site: https://rex-thecreator.github.io/Lightsey-Bridge-Website/
 - Structured site for maintainability and scalability
 - Deployed, updated, and maintained the site using GitHub Pages
 
-Looking to modify the website? Check out "DOCS.md"
+Looking to modify the website? Check out "Lightsey Bridge Website/DOCS.md"
 
 
 This site was created by Jim Daou(https://github.com/Rex-TheCreator) and was inspired by the Lightsey Bridge Staff of 2025-2026
